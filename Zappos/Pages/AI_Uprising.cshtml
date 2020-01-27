@@ -1,0 +1,87 @@
+﻿@page
+@model AI_UprisingModel
+@section Scripts {
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+}
+@{
+    ViewData["Title"] = "AI Uprising";
+}
+<h1 class="display-4">@ViewData["Title"]</h1>
+<br />
+<div class="container">
+    <img src="images/products/thumbnails/AI1.jpeg" alt="AI Uprising" style="width:100%;">
+    <div class="content">
+        <h1>What it is?</h1>
+        <p>An AI takeover is a hypothetical scenario in which artificial intelligence (AI) becomes the dominant form of intelligence on Earth, with computers or robots effectively taking the control of the planet away from the human species.</p>
+    </div>
+</div>
+
+
+
+
+<body>
+    <br /><br />
+    <h2>Will Llama save us from the robots?</h2>
+    <p>Please fill in the below information and let us know your thoughts in case of an AI uprising.</p>
+    <div class="container2">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="germany">Germany</option>
+                        <option value="finland">Finland</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="thoughts">Thoughts</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="thoughts" name="thoughts" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <button type="button"
+                        class="button"
+                        onclick="opinion()">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <br />
+        <div class="OutFont" id="output" style="font-family: Courier New, Courier, monospace"> </div>
+    </div>
+
+</body>
+
+
+
+
+
+
